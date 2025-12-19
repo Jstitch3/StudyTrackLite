@@ -1,4 +1,4 @@
-package com.example.studytracklite
+package com.example.studytrack
 
 import android.content.Context
 import android.os.Bundle
@@ -10,8 +10,8 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.studytracklite.ui.theme.StudyTrackLiteTheme
 import androidx.core.content.edit
+import com.example.studytrack.ui.theme.StudyTrackTheme
 
 class PreferencesActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +20,7 @@ class PreferencesActivity : ComponentActivity() {
         val prefs = getSharedPreferences("settings", Context.MODE_PRIVATE)
 
         setContent {
-            StudyTrackLiteTheme {
+            StudyTrackTheme {
                 var notificationsEnabled by remember {
                     mutableStateOf(prefs.getBoolean("notifications", true))
                 }

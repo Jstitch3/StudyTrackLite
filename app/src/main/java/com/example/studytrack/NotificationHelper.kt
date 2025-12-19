@@ -1,4 +1,4 @@
-package com.example.studytracklite
+package com.example.studytrack
 
 import android.app.NotificationChannel
 import android.app.NotificationManager

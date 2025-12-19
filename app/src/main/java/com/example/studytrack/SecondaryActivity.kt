@@ -1,4 +1,4 @@
-package com.example.studytracklite
+package com.example.studytrack
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,7 +7,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.studytracklite.ui.theme.StudyTrackLiteTheme
+import com.example.studytrack.ui.theme.StudyTrackTheme
 
 class SecondaryActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +16,7 @@ class SecondaryActivity : ComponentActivity() {
         val tasks = intent.getStringArrayListExtra("tasks") ?: arrayListOf()
 
         setContent {
-            StudyTrackLiteTheme {
+            StudyTrackTheme {
                 Column(modifier = Modifier.padding(24.dp)) {
                     Text("Your Study Tasks", style = MaterialTheme.typography.headlineSmall)
                     Spacer(modifier = Modifier.height(12.dp))

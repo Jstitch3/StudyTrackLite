@@ -1,4 +1,4 @@
-package com.example.studytracklite
+package com.example.studytrack
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,14 +8,14 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.studytracklite.ui.theme.StudyTrackLiteTheme
+import com.example.studytrack.ui.theme.StudyTrackTheme
 
 class HelpActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
-            StudyTrackLiteTheme {
+            StudyTrackTheme {
                 HelpScreen()
             }
         }
